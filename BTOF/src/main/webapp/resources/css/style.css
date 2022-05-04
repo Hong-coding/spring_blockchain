@@ -1,0 +1,173 @@
+        * {
+            text-decoration: none;
+        }
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        /*
+        body {
+            line-height: 1;
+        }
+        ol, ul, li {
+            list-style: none;
+            display: inline-block;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        body { color:#fff; box-sizing: border-box;}
+        #wrap { width:100%; margin: 0 auto; color:#FFF; text-align: center; box-sizing: border-box;
+            position:relative;}
+        #wrap::after{content:''; display: block; clear: both;}
+
+        header{height:auto; background-color: #111;}
+        
+        nav{
+            
+            box-sizing: border-box;
+            display:flex; 
+            justify-content:space-around;
+            overflow-y: auto; background-color: #222;  left:0; top:0; color: #555;
+            transition: 0.3s;
+            padding: 40px 0;
+            z-index: 999;}
+            
+        nav::after{content: ''; display: block; clear: both;}
+        nav.sticky {position: fixed;
+            padding: 7px 0;
+            background-color: #fff;
+            box-shadow: 0 2px 2px rgba(0,0,0,.3);
+            top:0;}
+        nav.sticky ul li a{color: #c7b299;} 
+        nav ul{color: #fff;}
+        
+      A:link {text-decoration:none;color:#E1E8E7}
+      A:hover{text-decoration:yes;color:#77878F}
+      A:visited {text-decoration:none;color:#89488A}
+      
+        nav .nav_menu {justify-self:center;}
+        nav .member {justify-self: end; margin-right: 10px;}
+        */
+
+
+        #main_top{width:100%; height:250px;  background: rgba(50,100,50,0.5); }
+        
+        #main_left{width:15%;
+         /*height: */
+            background: #000;}
+        #main_left h3, #main_left a{width:15%;
+         /*height: */
+            background: #000;
+            color: #fff;}
+        #main_right{
+           display:inline-block;
+           width: 85%;
+           /* height:700px;*/
+           background: white; 
+           /*padding: 3em;*/
+           box-sizing: border-box;}
+        .body_inner{width:100%; font-size: 1rem;}
+        .main_inner{float:left;}
+        
+        #main_top h3 {
+           margin-top:70px;
+           padding-top:20px;
+           display:inline-block;
+           box-sizing:border-box;
+           font-size: 3rem;
+           
+           }
+        
+        
+        aside{width:50px;background-color: #333; position:fixed; bottom:50px; right:0;
+            display: block;
+            align-items: center;
+            z-index: 990;}
+        aside h3, aside a{width: 50px; height: 50px; display: inline-block; color:#fff;
+           margin-top:1rem;}
+        main{background-color: #444; }
+        main::after{content:''; display: block; clear: both;}
+        footer{height: 150px; background-color: #555;}
+        
+        
+        /* 바디 갤러리 부분 */
+        
+        #main_right .productFilter {display:block;
+           width:100px; 
+           margin:10px;
+           align-self: flex-end;} 
+        #main_right .product {width:250px; height:250px; 
+           background-color: white;
+           display:inline-block;
+           margin:1em;}
+        
+/*
+      nav ul li a {text-decoration:none; color: white;}
+      A:link {text-decoration:none;color:#E1E8E7; }
+      A:hover{text-decoration:yes; color:#77878F; }
+      A:visited{font-style: none; color: white;}
+      
+      .darktext {
+         color:#77878F
+      }
+*/
+        /* 미디어 쿼리 */
+        @media (max-width: 1300px){
+            #wrap {width:100%; background: #88024f;}
+        }
+        
+        @media (max-width: 980px){
+            #wrap {width:100%; background: #88024f;}
+         #main_left, #main_right {width:100%;}            
+           #main_right .product {width:250px; height:250px;
+              display:inline-block;
+              margin:0.1em;} 
+        } 
+        @media (max-width: 768px){
+            #wrap {width:100%; background: #88024f;}
+         #main_left, #main_right {width:100%;}            
+           #main_right .product {width:250px; height:250px;
+              display:inline-block;
+              margin:0.1em;} 
+        } 
+       
+      
+        @media (max-width: 480px){ 
+            #wrap {width:100%; background: #88024f;}
+            #main_top, #main_left, #main_right, footer{float:none; width:100%;}
+            header {height: 50px;}
+            header nav {width: 100%;}
+            aside {width: 50px;}
+        }
